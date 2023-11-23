@@ -31,7 +31,9 @@ const Application = () => {
         <label htmlFor="music">Music</label>
         <br />
         <br />
-
+        <label htmlFor="agreeTerms">
+          <input type="checkbox" id="agreeTerms" /> I agree with terms
+        </label>
         <input type="submit" value="Submit" />
       </form>
     </div>

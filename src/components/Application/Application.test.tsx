@@ -29,10 +29,18 @@ describe("Application", () => {
     const genderElement = screen.getByRole("combobox");
     expect(genderElement).toBeInTheDocument();
 
-    const interestsElement = screen.getByRole("checkbox");
+    const interestsElement = screen.getByRole("checkbox", {
+      name: "Music",
+    });
     expect(interestsElement).toBeInTheDocument();
 
     const submitElement = screen.getByRole("button");
     expect(submitElement).toBeInTheDocument();
+
+    const genderElement2 = screen.getByLabelText("Gender:");
+    expect(genderElement2).toBeInTheDocument();
+
+    const agreeTermsElement = screen.getByLabelText("I agree with terms");
+    expect(agreeTermsElement).toBeInTheDocument();
   });
 });
