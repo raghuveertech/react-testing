@@ -3,9 +3,16 @@ import React from "react";
 const Application = () => {
   return (
     <div>
+      <h1>Page Header</h1>
+      <h2>Section Header</h2>
       <form action="/submit" method="post">
-        <label htmlFor="name">Name:</label>
-        <input type="text" id="name" name="name" />
+        <label htmlFor="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" />
+        <br />
+        <br />
+
+        <label htmlFor="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" />
         <br />
         <br />
 
