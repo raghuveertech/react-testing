@@ -48,5 +48,8 @@ describe("Application", () => {
 
     const paragraphElement = screen.getByText(/all fields are mandatory/i);
     expect(paragraphElement).toBeInTheDocument();
+
+    const nameElement = screen.getByDisplayValue(/john/i);
+    expect(nameElement).toBeInTheDocument();
   });
 });

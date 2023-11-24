@@ -5,10 +5,17 @@ const Application = () => {
     <div>
       <h1>Page Header</h1>
       <h2>Section Header</h2>
-      <p>All fields are mandatory</p>
+      <p>All fields are mandatory.</p>
       <form action="/submit" method="post">
         <label htmlFor="fname">First Name:</label>
-        <input type="text" id="fname" name="fname" placeholder="First Name" />
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="First Name"
+          value={"John"}
+          onChange={() => {}}
+        />
         <br />
         <br />
 
