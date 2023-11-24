@@ -45,5 +45,8 @@ describe("Application", () => {
 
     const firstNameElement = screen.getByPlaceholderText("First Name");
     expect(firstNameElement).toBeInTheDocument();
+
+    const paragraphElement = screen.getByText(/all fields are mandatory/i);
+    expect(paragraphElement).toBeInTheDocument();
   });
 });
