@@ -7,7 +7,7 @@ const Application = () => {
       <h2>Section Header</h2>
       <form action="/submit" method="post">
         <label htmlFor="fname">First Name:</label>
-        <input type="text" id="fname" name="fname" />
+        <input type="text" id="fname" name="fname" placeholder="First Name" />
         <br />
         <br />
 

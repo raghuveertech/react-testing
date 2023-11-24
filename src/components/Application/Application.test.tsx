@@ -42,5 +42,8 @@ describe("Application", () => {
 
     const agreeTermsElement = screen.getByLabelText("I agree with terms");
     expect(agreeTermsElement).toBeInTheDocument();
+
+    const firstNameElement = screen.getByPlaceholderText("First Name");
+    expect(firstNameElement).toBeInTheDocument();
   });
 });
