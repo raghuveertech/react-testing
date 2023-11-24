@@ -8,6 +8,8 @@ const Application = () => {
       <p>All fields are mandatory.</p>
       <span title="Close">X</span>
 
+      <div data-testid="custom-elements">Custom HTML Element</div>
+
       <img src="image.jpg" alt="image of a person with laptop" />
 
       <form action="/submit" method="post">

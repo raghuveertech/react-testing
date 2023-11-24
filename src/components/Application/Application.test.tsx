@@ -57,5 +57,8 @@ describe("Application", () => {
 
     const closeElement = screen.getByTitle(/close/i);
     expect(closeElement).toBeInTheDocument();
+
+    const customElement = screen.getByTestId(/custom-element/);
+    expect(customElement).toBeInTheDocument();
   });
 });
