@@ -6,6 +6,7 @@ const Application = () => {
       <h1>Page Header</h1>
       <h2>Section Header</h2>
       <p>All fields are mandatory.</p>
+      <span title="Close">X</span>
 
       <img src="image.jpg" alt="image of a person with laptop" />
 

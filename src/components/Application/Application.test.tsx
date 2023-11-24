@@ -54,5 +54,8 @@ describe("Application", () => {
 
     const imageElement = screen.getByAltText(/Image of a person/i);
     expect(imageElement).toBeInTheDocument();
+
+    const closeElement = screen.getByTitle(/close/i);
+    expect(closeElement).toBeInTheDocument();
   });
 });
