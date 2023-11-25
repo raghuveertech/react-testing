@@ -40,16 +40,25 @@ describe("Application", () => {
     const genderElement2 = screen.getByLabelText("Gender:");
     expect(genderElement2).toBeInTheDocument();
 
-    const agreeTermsElement = screen.getByLabelText("I agree with terms");
+    const agreeTermsElement = screen.getByLabelText("I agree with terms"); // exact string match
     expect(agreeTermsElement).toBeInTheDocument();
 
-    const firstNameElement = screen.getByPlaceholderText("First Name");
+    const firstNameElement = screen.getByPlaceholderText(/First Name/); // substring match
     expect(firstNameElement).toBeInTheDocument();
 
-    const paragraphElement = screen.getByText(/all fields are mandatory/i);
-    expect(paragraphElement).toBeInTheDocument();
+    const paragraphElement1 = screen.getByText("All fields are mandatory"); // exact string match
+    expect(paragraphElement1).toBeInTheDocument();
 
-    const nameElement = screen.getByDisplayValue(/john/i);
+    const paragraphElement2 = screen.getByText(/^all fields are mandatory$/i); // exact string match, ignore case
+    expect(paragraphElement2).toBeInTheDocument();
+
+    const paragraphElement3 = screen.getByText((content) =>
+      content.startsWith("All")
+    ); // Function
+
+    expect(paragraphElement3).toBeInTheDocument();
+
+    const nameElement = screen.getByDisplayValue(/john/i); // substring match, ignore case
     expect(nameElement).toBeInTheDocument();
 
     const imageElement = screen.getByAltText(/Image of a person/i);
