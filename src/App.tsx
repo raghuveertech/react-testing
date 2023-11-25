@@ -2,6 +2,7 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Application from "./components/Application/Application";
+import Skills from "./components/Skils/Skills";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
           Hello World
         </a>
       </header>
-      <Application />
+      {/* <Application /> */}
+      <Skills skills={["HTML", "CSS", "JavaScript", "jQuery"]} />
     </div>
   );
 }
