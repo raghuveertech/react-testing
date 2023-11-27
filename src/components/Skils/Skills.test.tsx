@@ -57,4 +57,11 @@ describe("Skills", () => {
 
     expect(startLearningButton).toBeInTheDocument();
   });
+
+  test("loremElement rendered correctly", () => {
+    const { container } = render(<Skills skills={skills} />);
+
+    const loremElement = container.querySelector("#loremElement");
+    expect(loremElement).toBeInTheDocument();
+  });
 });

@@ -24,6 +24,7 @@ const Skills = (props: skillsProps) => {
           return <li key={skill}>{skill}</li>;
         })}
       </ul>
+      <p id="loremElement">Lorem Ipsum</p>
     </>
   );
 };
