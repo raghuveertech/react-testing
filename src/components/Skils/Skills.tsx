@@ -24,6 +24,8 @@ const Skills = (props: skillsProps) => {
           return <li key={skill}>{skill}</li>;
         })}
       </ul>
+      <h1>Heading</h1>
+      <input type={"text"} />
       <p id="loremElement">Lorem Ipsum</p>
     </>
   );
