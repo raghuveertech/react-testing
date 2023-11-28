@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Application from "./components/Application/Application";
 import Skills from "./components/Skils/Skills";
+import Counter from "./components/Counter/Counter";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
         </a>
       </header>
       {/* <Application /> */}
-      <Skills skills={["HTML", "CSS", "JavaScript", "jQuery"]} />
+      {/* <Skills skills={["HTML", "CSS", "JavaScript", "jQuery"]} /> */}
+      <Counter />
     </div>
   );
 }

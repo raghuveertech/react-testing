@@ -35,9 +35,9 @@ describe("Skills", () => {
   test("Start Learning Button eventually renders in the DOM", async () => {
     const view = render(<Skills skills={skills} />);
 
-    logRoles(view.container);
+    // logRoles(view.container);
 
-    screen.debug();
+    // screen.debug();
 
     // screen
     //   .findByRole("button", {
