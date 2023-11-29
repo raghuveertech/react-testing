@@ -4,6 +4,7 @@ import "./App.css";
 import Application from "./components/Application/Application";
 import Skills from "./components/Skils/Skills";
 import Counter from "./components/Counter/Counter";
+import Counter2 from "./components/Counter2/Counter2";
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
       </header>
       {/* <Application /> */}
       {/* <Skills skills={["HTML", "CSS", "JavaScript", "jQuery"]} /> */}
-      <Counter />
+      {/* <Counter /> */}
+      <Counter2 />
     </div>
   );
 }
